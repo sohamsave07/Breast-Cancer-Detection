@@ -1,0 +1,65 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.WrapperSubsetEval -B weka.classifiers.trees.J48 -F 5 -T 0.01 -R 1 -E DEFAULT -- -C 0.25 -M 2
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     breast_cancer_wisconsin-weka.filters.unsupervised.attribute.Reorder-R1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,26,27,28,29,30,31,32,21-weka.filters.unsupervised.attribute.Reorder-R1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,2
+Instances:    569
+Attributes:   31
+              radius_mean
+              texture_mean
+              perimeter_mean
+              area_mean
+              smoothness_mean
+              compactness_mean
+              concavity_mean
+              concave_points_mean
+              symmetry_mean
+              fractal_dimension_mean
+              radius_se
+              texture_se
+              perimeter_se
+              area_se
+              smoothness_se
+              compactness_se
+              concavity_se
+              concave_points_se
+              fractal_dimension_se
+              radius_worst
+              texture_worst
+              perimeter_worst
+              area_worst
+              smoothness_worst
+              compactness_worst
+              concavity_worst
+              concave_points_worst
+              symmetry_worst
+              fractal_dimension_worst
+              symmetry_se
+              diagnosis
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 239
+	Merit of best subset found:    0.961
+
+Attribute Subset Evaluator (supervised, Class (nominal): 31 diagnosis):
+	Wrapper Subset Evaluator
+	Learning scheme: weka.classifiers.trees.J48
+	Scheme options: -C 0.25 -M 2 
+	Subset evaluation: classification accuracy
+	Number of folds for accuracy estimation: 5
+
+Selected attributes: 8,20,21,29 : 4
+                     concave_points_mean
+                     radius_worst
+                     texture_worst
+                     fractal_dimension_worst
+

@@ -1,0 +1,84 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.InfoGainAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     breast_cancer_wisconsin-weka.filters.unsupervised.attribute.Reorder-R1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,26,27,28,29,30,31,32,21-weka.filters.unsupervised.attribute.Reorder-R1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,2
+Instances:    569
+Attributes:   31
+              radius_mean
+              texture_mean
+              perimeter_mean
+              area_mean
+              smoothness_mean
+              compactness_mean
+              concavity_mean
+              concave_points_mean
+              symmetry_mean
+              fractal_dimension_mean
+              radius_se
+              texture_se
+              perimeter_se
+              area_se
+              smoothness_se
+              compactness_se
+              concavity_se
+              concave_points_se
+              fractal_dimension_se
+              radius_worst
+              texture_worst
+              perimeter_worst
+              area_worst
+              smoothness_worst
+              compactness_worst
+              concavity_worst
+              concave_points_worst
+              symmetry_worst
+              fractal_dimension_worst
+              symmetry_se
+              diagnosis
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 31 diagnosis):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.685    22 perimeter_worst
+ 0.6686   23 area_worst
+ 0.6665   20 radius_worst
+ 0.6478   27 concave_points_worst
+ 0.6347    8 concave_points_mean
+ 0.5623    3 perimeter_mean
+ 0.5479    4 area_mean
+ 0.541     1 radius_mean
+ 0.5171    7 concavity_mean
+ 0.517    14 area_se
+ 0.4735   26 concavity_worst
+ 0.3679   11 radius_se
+ 0.3663   13 perimeter_se
+ 0.3204   25 compactness_worst
+ 0.304     6 compactness_mean
+ 0.2225   17 concavity_se
+ 0.197    18 concave_points_se
+ 0.1881   21 texture_worst
+ 0.1593    2 texture_mean
+ 0.1492   28 symmetry_worst
+ 0.1303   16 compactness_se
+ 0.1235   24 smoothness_worst
+ 0.0988    9 symmetry_mean
+ 0.0971    5 smoothness_mean
+ 0.0747   29 fractal_dimension_worst
+ 0.0346   19 fractal_dimension_se
+ 0.0228   30 symmetry_se
+ 0        10 fractal_dimension_mean
+ 0        12 texture_se
+ 0        15 smoothness_se
+
+Selected attributes: 22,23,20,27,8,3,4,1,7,14,26,11,13,25,6,17,18,21,2,28,16,24,9,5,29,19,30,10,12,15 : 30
+

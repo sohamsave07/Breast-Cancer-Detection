@@ -1,0 +1,66 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.GreedyStepwise -T -1.7976931348623157E308 -N -1 -num-slots 1
+Relation:     breast_cancer_wisconsin-weka.filters.unsupervised.attribute.Reorder-R1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,26,27,28,29,30,31,32,21-weka.filters.unsupervised.attribute.Reorder-R1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,2
+Instances:    569
+Attributes:   31
+              radius_mean
+              texture_mean
+              perimeter_mean
+              area_mean
+              smoothness_mean
+              compactness_mean
+              concavity_mean
+              concave_points_mean
+              symmetry_mean
+              fractal_dimension_mean
+              radius_se
+              texture_se
+              perimeter_se
+              area_se
+              smoothness_se
+              compactness_se
+              concavity_se
+              concave_points_se
+              fractal_dimension_se
+              radius_worst
+              texture_worst
+              perimeter_worst
+              area_worst
+              smoothness_worst
+              compactness_worst
+              concavity_worst
+              concave_points_worst
+              symmetry_worst
+              fractal_dimension_worst
+              symmetry_se
+              diagnosis
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Greedy Stepwise (forwards).
+	Start set: no attributes
+	Merit of best subset found:    0.667
+
+Attribute Subset Evaluator (supervised, Class (nominal): 31 diagnosis):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 2,7,8,14,20,22,23,24,26,27,30 : 11
+                     texture_mean
+                     concavity_mean
+                     concave_points_mean
+                     area_se
+                     radius_worst
+                     perimeter_worst
+                     area_worst
+                     smoothness_worst
+                     concavity_worst
+                     concave_points_worst
+                     symmetry_se
+
