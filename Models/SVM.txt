@@ -1,0 +1,66 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.lazy.IBk -K 2 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\""
+Relation:     breast_cancer_wisconsin-weka.filters.unsupervised.attribute.Reorder-R1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,26,27,28,29,30,31,32,21-weka.filters.unsupervised.attribute.Reorder-R1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,2-weka.filters.unsupervised.attribute.Remove-R1-7,9-19,22-28,30-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-V-N4-F1
+Instances:    426
+Attributes:   5
+              concave_points_mean
+              radius_worst
+              texture_worst
+              fractal_dimension_worst
+              diagnosis
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: M, B
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -4.5835 * (normalized) concave_points_mean
+ +      -4.6763 * (normalized) radius_worst
+ +      -2.333  * (normalized) texture_worst
+ +      -1.2848 * (normalized) fractal_dimension_worst
+ +       3.9959
+
+Number of kernel evaluations: 1747 (62.806% cached)
+
+
+
+Time taken to build model: 0.03 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         139               97.2028 %
+Incorrectly Classified Instances         4                2.7972 %
+Kappa statistic                          0.9391
+Mean absolute error                      0.028 
+Root mean squared error                  0.1672
+Relative absolute error                  5.9852 %
+Root relative squared error             34.6281 %
+Total Number of Instances              143     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.925    0.000    1.000      0.925    0.961      0.941    0.962     0.953     M
+                 1.000    0.075    0.957      1.000    0.978      0.941    0.962     0.957     B
+Weighted Avg.    0.972    0.047    0.973      0.972    0.972      0.941    0.962     0.956     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 49  4 |  a = M
+  0 90 |  b = B
+
